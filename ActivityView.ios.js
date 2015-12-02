@@ -9,7 +9,11 @@ var {
   NativeModules
 } = React;
 
-var NativeActivityView = NativeModules.ActivityView;
+var androidDummy = {
+  show: function(e){ throw 'not impelement!' };
+}
+
+var NativeActivityView = NativeModules.ActivityView || androidDummy ;
 
 /**
  * High-level docs for the ActivityView iOS API can be written here.
