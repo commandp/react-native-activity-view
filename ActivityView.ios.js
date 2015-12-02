@@ -10,7 +10,7 @@ var {
 } = React;
 
 var androidDummy = {
-  show: function(e){ throw 'not impelement!' };
+  show: e => {throw 'not impelement!'},
 }
 
 var NativeActivityView = NativeModules.ActivityView || androidDummy ;
